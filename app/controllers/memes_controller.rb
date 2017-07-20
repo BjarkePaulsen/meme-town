@@ -14,7 +14,7 @@ class MemesController < ApplicationController
 
   # GET /memes/new
   def new
-    @meme = Meme.new
+    @meme = current_user.memes.build
   end
 
   # GET /memes/1/edit
@@ -24,7 +24,7 @@ class MemesController < ApplicationController
   # POST /memes
   # POST /memes.json
   def create
-    @meme = Meme.new(meme_params)
+    @meme = current_user.memes.create(meme_params)
 
     respond_to do |format|
       if @meme.save
@@ -69,6 +69,6 @@ class MemesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def meme_params
-      params.require(:meme).permit(:title, :user_id)
+      params.require(:meme).permit(:title, :image, :user_id)
     end
 end
