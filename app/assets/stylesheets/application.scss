@@ -1,0 +1,31 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    background-color:#dde4ff ;
+color: #fff;
+    
+}
+
+.page-header h1 {
+    font-family: 'Pacifico';
+    color: #fff;
+    
+}
+.page-header small {
+    font-family: arial ;
+    color: #fff;
+    
+}
+
+.list-group-item {
+    background-color: #e24ddd;
+    
+}
+.list-group a {
+    color: #fff
+}
+.list-group .list-group-item:hover {
+    color: #fff;
+    background-color: #b73eb3;
+}
