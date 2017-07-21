@@ -4,6 +4,7 @@
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url( https://19818-presscdn-pagely.netdna-ssl.com/wp-content/uploads/1f0/0c/197a9419e41e23f4dfb4863c084430cf.jpg );
 background-size: cover;
+height: 100vh;
 color: #fff;
 
 }
@@ -18,4 +19,12 @@ color: #fff;
 
     color: #fff;
     
+}
+
+.jumbotron h1 {
+    color: #000;
+}
+
+input, select, textarea{
+    color: #000;
 }

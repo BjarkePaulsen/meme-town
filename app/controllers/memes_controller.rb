@@ -4,7 +4,7 @@ class MemesController < ApplicationController
   # GET /memes
   # GET /memes.json
   def index
-    @memes = Meme.all
+    @memes = Meme.all.reverse_order
   end
 
   # GET /memes/1
