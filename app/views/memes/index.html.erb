@@ -19,21 +19,23 @@
     <% end %>
   </tbody>
   
+  <center>
   <% @memes.each do |meme| %>
-  <div class="jumbotron">
+  <div class="jumbotron" style="max-width: 500px;">
     <h1>Hello, world!</h1>
     
-    <p>{ 
+    <p> 
         <%= image_tag meme.image(:large), class: "img-responsive" %> 
         <%= meme.title %> 
         <%= meme.user %> 
         <%= link_to 'Destroy', meme, method: :delete, data: { confirm: 'Are you sure?' } %> 
         <%= link_to 'Show', meme %>
         <%= link_to 'Edit', edit_meme_path(meme) %>
-    }</p>
+    </p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Komments</a></p>
   </div>
   <% end %>
+  </center>
   
   
 </table>
