@@ -11,7 +11,7 @@
     
     <p> 
         <%= image_tag meme.image(:large), class: "img-responsive" %> 
-        <%= meme.user %> 
+        <%= meme.user.email %> 
         <%= link_to 'Show', meme %>
     </p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Komments</a></p>
