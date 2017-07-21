@@ -28,9 +28,7 @@
         <%= image_tag meme.image(:large), class: "img-responsive" %> 
         <%= meme.title %> 
         <%= meme.user %> 
-        <%= link_to 'Destroy', meme, method: :delete, data: { confirm: 'Are you sure?' } %> 
         <%= link_to 'Show', meme %>
-        <%= link_to 'Edit', edit_meme_path(meme) %>
     </p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Komments</a></p>
   </div>
